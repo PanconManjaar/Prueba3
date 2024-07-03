@@ -71,7 +71,7 @@ def Buscar_rut():
         print("No hay pedidos en la lista!")
         time.sleep(3)
     else:
-        rut_buscar = input("Ingrese Rut del pedido a buscar: ")
+        rut_buscar = int(input("Ingrese Rut del pedido a buscar: "))
         if rut_buscar == ['Rut']:
             for pe in range(1):
                 print(f"Rut: {pe['Rut']}, NOMBRE: {pe['Nombre']}, DIRECCIÓN: {pe['Direccion']}, COMUNA: {pe['Comuna']} CIL.5KG: {pe['Cil.5kg']}, CIL.15KG: {pe['Cil.15kg']}, TOTAL: {pe['Total']}")
